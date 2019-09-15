@@ -1,0 +1,11 @@
+<script type="text/javascript">
+ 
+function gform_format_option_label(fullLabel, fieldLabel, priceLabel, selectedPrice, price, formId, fieldId) {
+    if ( fieldId != 43 ) {
+        return fullLabel;
+    }
+    priceLabel = " <span class='ginput_price'>" + gformFormatMoney(price) + '</span>';
+    return fieldLabel + priceLabel;
+}
+ 
+</script>
